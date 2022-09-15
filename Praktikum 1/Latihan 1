@@ -1,0 +1,6 @@
+#Latihan 1
+data_modul= read.delim("clipboard")
+View(data_modul)
+mean(data_modul$Tinggi.Badan)
+str(data_modul)
+data_modul = read.csv("C:/Users/ASUS/Documents/Usakti/Semester 3/BahanPraktikum 1_DataModul.csv",1)
