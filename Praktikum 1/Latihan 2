@@ -1,0 +1,12 @@
+#Latihan 2
+data_modul_csv = read.csv("C:/Users/ASUS/Documents/Usakti/Semester 3/BahanPraktikum1_DataModul.csv")
+data_modul_csv= read.delim("clipboard")
+View(data_modul_csv)
+mean(data_modu_csv$Tinggi.Badan)
+str(data_modul_csv)
+data_modul_csv = read.csv("C:/Users/ASUS/Documents/Usakti/Semester 3/BahanPraktikum1_DataModul.csv",1)
+
+install.packages("xlsx")
+library("xlsx")
+
+data_modul_xlsx= read.xlsx("C:/Users/ASUS/Documents/Usakti/Semester 3/BahanPraktikum1_DataModul.xlsx",1)
