@@ -4,3 +4,6 @@ exchell3 <- c(TRUE,TRUE,TRUE,FALSE)
 dataku <- data.frame(exchell1, exchell2, exchell3)
 names(dataku) <- c("ID","Color","Passed") # variable names 
 print(dataku)
+
+data_exchell <- data.frame(id = letters[1:10], x = 1:10, y = 11:20)
+print (data_exchell)
