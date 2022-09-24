@@ -1,0 +1,7 @@
+library(dplyr)
+df<-filter(df,Brick=="No")
+print(df)
+
+library(dplyr)
+df<-filter(df,Brick=="NO"|Neighborhood=="East")
+print(df)
