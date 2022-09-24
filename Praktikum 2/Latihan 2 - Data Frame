@@ -1,6 +1,0 @@
-exchell1 <- c(1,2,3,4)
-exchell2 <- c("red", "white", "red", NA)
-exchell3 <- c(TRUE,TRUE,TRUE,FALSE)
-dataku <- data.frame(exchell1, exchell2, exchell3)
-names(dataku) <- c("ID","Color","Passed") # variable names 
-print(dataku)
