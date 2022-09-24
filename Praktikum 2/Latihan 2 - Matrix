@@ -1,0 +1,7 @@
+#MATRIKS
+cells <- c(3,15,-27,38)
+exchell <- c("R1", "R2")
+ointu <- c("C1", "C2") 
+matrixxx <- matrix(cells, nrow=2, ncol=2, byrow=TRUE,
+                      dimnames=list(exchell, ointu))
+print(matrixxx)
