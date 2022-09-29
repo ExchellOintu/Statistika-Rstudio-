@@ -1,0 +1,31 @@
+data_exchell = read.csv("C:/Users/ASUS/Documents/Usakti/Semester 3/Statisktika/houseprices.csv")
+View(data_exchell)
+
+exchell <- data_exchell[data_exchell$Bedrooms==2,]  
+View(exchell)
+
+exchell$Bathrooms <- ifelse(exchell$Bathrooms > 2, c("large"), c("small"))
+View(exchell)
+exchell$newvariable <- ifelse(exchell$Offers > 2, c("large"), c("small")) 
+View(exchell)
+
+exchell$newvariable <- exchell$Price/exchell$SqFt
+View(exchell)
+
+exchell$newvariable<-NULL
+View(exchell)
+
+data_exchell.kolom1dan2 <- data_exchell[,1:2] 
+View(data_exchell.kolom1dan2)
+data_exchell.kolom3dan4 <- data_exchell[,3:4] 
+View(data_exchell.kolom3dan4)
+data_exchell.kolom1sd4<-cbind(data_exchell.kolom1dan2, data_exchell.kolom3dan4) 
+View(data_exchell.kolom1sd4)
+
+data_exchell.baris1sd3 <- data_exchell[1:3,] 
+data_exchell.baris4sd6 <- data_exchell[4:6,] 
+data_exchell.baris1sd6 <- rbind(data_exchell.baris1sd3, data_exchell.baris4sd6) 
+View(data_exchell.baris1sd6)
+
+data_exchell.sort<-data_exchell[order(data_exchell$Price),] 
+View(data_exchell.sort)
