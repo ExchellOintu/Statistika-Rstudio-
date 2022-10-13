@@ -1,0 +1,5 @@
+exchell  = read.delim("clipboard")
+View(exchell)
+str(exchell)
+mean(exchell$pendapatan)
+t.test(exchell$pendapatan,mu=14500)
