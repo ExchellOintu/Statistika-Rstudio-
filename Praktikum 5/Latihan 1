@@ -1,0 +1,5 @@
+exchell  = read.delim("clipboard")
+View(exchell)
+str(exchell)
+mean(exchell$volume)
+t.test(exchell$volume,mu=10)
