@@ -1,0 +1,7 @@
+#no 2
+#Hubungan variabel numeric yang diambil adalah jumlah Bedrooms dengan harga rumah
+data_exchell = read.csv("C:/Users/ASUS/Documents/Usakti/Semester 3/Statisktika/Dataset/Houseprices.csv")
+View(data_exchell)
+library(ggplot2)
+qplot(data_exchell$Price,data_exchell$Bedrooms)
+plot(data_exchell$Price,data_exchell$Bedrooms)
