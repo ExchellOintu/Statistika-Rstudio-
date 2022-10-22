@@ -1,0 +1,12 @@
+#Latihan keempat - Tugas
+#Faktor Yang mempengaruhi pengeluaran yang diambil adalah status Married.
+data_exchell = read.csv("C:/Users/ASUS/Documents/Usakti/Semester 3/Statisktika/Dataset/DirectMarketing.csv")
+View(data_exchell)
+hist(data_exchell$AmountSpent)
+hist(data_exchell$AmountSpent[data_exchell$Married == "Single"])
+hist(data_exchell$AmountSpent[data_exchell$Married == "Married"])
+
+d=density(data_exchell$AmountSpent)
+plot(d)
+d=density(data_exchell$AmountSpent[data_exchell$Married == "Married"])
+plot(d)
