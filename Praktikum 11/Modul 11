@@ -1,0 +1,12 @@
+data_statis=read.delim("clipboard")
+View(data_statis)
+model <- aov(harga~kualitas, data=data_statis)
+summary(model)
+kruskal.test(harga~kualitas, data=data_statis)
+
+df_exchell=PlantGrowth
+View(df_exchell)
+model <- aov(weight~group, data=df_exchell)
+summary(model)
+tukey.test <- TukeyHSD(model)
+tukey.test
