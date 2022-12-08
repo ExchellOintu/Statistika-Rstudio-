@@ -1,0 +1,18 @@
+df_exchell = read.delim("clipboard")
+View(df_exchell)
+head(df_exchell)
+model_reg=lm(df_exchell$y~df_exchell$x)
+summary(model_reg)
+
+data_exchell = read.csv("C:/Users/ASUS/Documents/Usakti/Semester 3/Statisktika/Dataset/houseprices.csv")
+View(data_exchell)
+data_exchell$brick_dummy <- ifelse(data_exchell$Brick == "Yes", 1,0)
+data_exchell$N_dummy1 <- ifelse(data_exchell$Neighborhood == "West", 1,0)
+data_exchell$N_dummy2 <- ifelse(data_exchell$Neighborhood == "North", 1,0)
+
+model=lm(data_exchell$Price~data_exchell$SqFt+data_exchell$Bedrooms+data_exchell$Bathrooms+data_exchell$brick_dummy+data_exchell$N_dummy1+data_exchell$N_dummy2)
+summary(model)
+
+by(data_exchell$Price, data_exchell$Neighborhood, mean)
+by(data_exchell$Price, data_exchell$Brick, mean)
+
