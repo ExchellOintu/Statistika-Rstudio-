@@ -1,0 +1,28 @@
+data_exchell = read.delim("clipboard")
+View(data_exchell)
+wilcox.test(data_exchell$Sebelum,data_exchell$Setelah,paired=TRUE)
+
+df_exchell = read.delim("clipboard")
+View(df_exchell)
+wilcox.test(df_exchell$Sebelum,df_exchell$Sesudah,paired=TRUE)
+
+df_exchell=read.delim("clipboard")
+View(df_exchell)
+# independent 2-group Mann-Whitney U Test
+wilcox.test(df_exchell$obat~df_exchell$grup)
+# where y is numeric and A is A binary factor
+head(df_exchell)
+rank(df_exchell$obat)
+
+#Laprak
+data_sabatino = read.delim("clipboard")
+head (data_sabatino)
+wilcox.test(data_sabatino$Ganjil,data_sabatino$Genap,paired=TRUE)
+rank(data_sabatino$Ganjil)
+rank(data_sabatino$Genap)
+
+data_ointu = read.delim("clipboard")
+head(data_ointu)
+wilcox.test(data_ointu$caffeine,data_ointu$placebo,paired=TRUE)
+rank(data_ointu$caffeine)
+rank(data_ointu$placebo)
